@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="CSS Files/secondPage.css" />
+  </head>
+
+  <body>
+    <div id="gameHeader">
+      <div>
+        <p>Player: <span id="playerName"></span></p>
+        <p>Last game: <span id="lastLoginDate"></span></p>
+      </div>
+      <p id="gameTimer"></p>
+      <p>Score: <span id="gameScore">0</span></p>
+    </div>
+    <div id="gameContainer">
+      <img src="Pictures/Basket.jpg" id="basket" />
+    </div>
+    <div id="scoreWindow" style="display: none">
+      <div class="middleContainer">
+        <p id="scoreMessage">You Win</p>
+        <p>Score:</p>
+        <p id="finalScore"></p>
+        <button id="playAgainButton" class="controlButton">Play Again</button>
+        <button id="backHomeButton" class="controlButton">Back Home</button>
+      </div>
+    </div>
+    <script src="JS Files/API.js"></script>
+    <script src="JS Files/game.js"></script>
+  </body>
+</html>

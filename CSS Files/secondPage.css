@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Angry Birds";
+  src: url(../fonts/angrybirds-regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html * {
+  font-family: "Angry Birds";
+  color: brown;
+  font-size: 30px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+}
+
+div#gameContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../Pictures/background1.jpg);
+  background-size: 100% 100%;
+  z-index: 1;
+}
+
+div#gameHeader {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+}
+
+img#basket {
+  position: absolute;
+  width: 150px;
+  height: auto;
+}
+
+img.gameEgg {
+  src: url(../Pictures/object_012_egg.png);
+  position: absolute;
+  width: 30px;
+  height: auto;
+}
+
+div#scoreWindow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 20; /* To overlap the gameWindow */
+}
+
+div.middleContainer {
+  padding: 50px;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  background-image: url(../Pictures/back_101_menu.png);
+  background-size: 100% 100%;
+}
+
+div.middleContainer > * {
+  margin: 12px;
+  color: black;
+}
+
+div.middleContainer button {
+  padding: 16px;
+  background-image: url(../Pictures/backgound_002.png);
+  background-size: 100% 100%;
+  border: none;
+  outline: none;
+}
+
+#lastLoginDate {
+  font-size: 16px;
+}
+
+.controlButton {
+  cursor: pointer;
+}
+.controlButton:hover {
+  transform: scale(1.1);
+}
